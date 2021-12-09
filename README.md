@@ -1,1 +1,1 @@
-Here we will store the Javascript for our website
+This is the directory for the Images
