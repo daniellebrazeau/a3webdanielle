@@ -1,0 +1,501 @@
+/*our CSS*/
+
+/* Navigation Bar*/ 
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 25px;
+  overflow: hidden;
+  background-color: #8FBC8F;
+}
+/* nav bar on the right of webpage */
+li {
+  float: right;
+  text-align: right;
+}
+/*nav bar horizontal at full screen */
+li a {
+  display: block;
+  color: #0ba813;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: 'Comic Sans MS', cursive, sans-serif ;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+/* Change the link colour on hover */
+li a:hover {
+  background-color: #9b1616;
+  background-color: #9fca9f;
+}
+/* responsive design, nav bar becomes vertical */ 
+@media screen and (max-width: 1340px) {
+  .navbar li {
+    text-align: center;
+    float: none;
+  }
+  li .logo{
+    display: none;
+  }
+}
+/* body background a smooth colour that is appealing and not too bright */ 
+body {
+  background: #fff8dc;
+  font-family: Verdana;
+  width: 100%;
+}
+
+/*common footer on everypage, to stand out from the background */
+footer {
+  background: rgb(43, 133, 98);
+  font-family: Verdana;
+  color: #ffffff;
+  text-align: center;
+}
+
+.Footer_Text {
+  background: rgb(43, 133, 98);
+  font-family: Verdana;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+/*logo designed by the group, to match theme of website */ 
+.logo{ 
+  position:absolute;
+  top: 13px;
+  left: 35px; 
+  } 
+
+.website_title {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 100%
+  }
+ /* website title in the center of images on each page */   
+.Centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+  }
+
+  /* makes heading image responsive */
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+/* quote and statement on home page */
+.Quote {
+    font-size: 25px;
+    font-style: italic;
+    color: #2E8B57;
+    padding: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+.Statement {
+    font-size: 25px;
+    color: darkgreen;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+/* meet the team page with rounded images, and text on the right */
+/* alternating image design to try and take up some white space in the background */  
+.MeetTeam {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border:solid;
+  border-color: black;
+
+}
+
+.MeetTeamJustin {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border:solid;
+  border-color: black;
+
+}
+/* heading for names on meet the team page */
+.Teamhead{
+  font-size: 25px;
+  color: black;
+  padding: 12px;
+  text-align: center;
+  padding-top: 150px;
+  font-weight: bold;
+}
+
+.description{
+  font-size: 20px;
+  color: rgb(3, 131, 3);
+  padding-right: 10px;
+  text-align: center;
+}
+
+/* rows and columns for meet the team page */
+.row {
+  display:flex;
+}
+.column {
+  flex: 50%;
+  padding: 100px;
+  padding-bottom: 25px;
+}
+
+/*mobile phone usage for meet the team page*/ 
+@media screen and (max-width: 1000px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    padding: 5px;
+    padding-bottom: 5px;
+  }
+  .Teamhead{
+    font-size: 20px;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    padding-top: 150px;
+    font-weight: bold;
+  }
+  .description{
+    font-size: 15px;
+    color: rgb(3, 131, 3);
+    text-align: center;
+  }
+  #MeetTeam{
+    border-radius: 50%;
+    display: block;
+    margin-left: 1px;
+    margin-right: auto;
+    width: 50%;
+    border:solid;
+    border-color: black;
+  }
+}
+
+/* formats all h2 */
+h2{
+  font-size: 25px;
+  color: black;
+  padding: 12px;
+  text-align: center;
+}
+
+/* formats all p */
+p{
+  font-size: 20px;
+  color: rgb(3, 131, 3);
+  padding-right: 10px;
+}
+
+.Images_Gen {
+  border: 5px solid rgb(3, 131, 3);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
+  display: none;
+  
+}
+/* adding buttons to page including java script */ 
+button {
+  background-color: rgb(3, 131, 3);
+  border-color:lightslategray;
+  font-size: 15px;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.Button_Text {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* columns for the plans and expensives page */
+.columnPlans {
+  flex: 50%;
+  padding: 3%;
+  padding-bottom: 0px;
+  padding-top: 50px;
+
+}
+/* adding boxes around plans and adding "clickable" buttons to show prices */
+.mapbasicplan {
+  padding: 20px;
+  border-style: solid;
+  border-color: black;
+  background-color: ivory;
+  text-align: center;
+  box-shadow: 5px 6px #888888;
+}
+
+.dataplan
+{
+  padding: 20px;
+  border-style: solid;
+  border-color: black;
+  background-color: ivory;
+  text-align: center;
+  box-shadow: 5px 6px #888888;
+}
+
+.mapplan
+{
+  padding: 20px;
+  border-style: solid;
+  border-color: black;
+  background-color: ivory;
+  text-align: center;
+  box-shadow: 5px 6px #888888;
+}
+
+.remoteplan
+{
+  padding: 20px;
+  border-style: solid;
+  border-color: black;
+  background-color: ivory;
+  text-align: center;
+  box-shadow: 5px 6px #888888;
+  padding-bottom:7.5%;
+}
+/*different plans but have the same text font/heading for flow */
+.planstext{
+color: black;
+font-size: 18px;
+}
+
+.plansheading {
+color: rgb(3, 131, 3);
+font-size: 24px;
+font-family: Verdana;
+}
+
+
+.buttonformplan {
+  background-color: rgb(3, 131, 3);
+  border-color:black;
+  font-size: 15px;
+  color: white;
+  border-radius: 8px;
+}
+
+.buttonplans {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+
+  /* unvisited link design help from w3schools */
+  a:link.links {
+    color: green;
+
+  }
+  
+  /* visited link */
+  a:visited.links {
+    color: sienna;
+  }
+  
+  /* hovering over the link with mouse*/
+  a:hover.links {
+    color: lightgreen;
+  }
+  
+  /* the link that you selected*/
+  a:active.links {
+    color: darkgreen;
+  }
+
+.FAQtext {
+  color: rgb(3, 131, 3);
+  font-size: 20px;
+}
+/* Contact Us page text (map title) */
+.contactinfo {   
+  text-indent: 90px;
+  color: black;
+  font-size: 35px;
+}
+/* Contact Us page text (emails) */
+.email {
+    text-indent: 150px;
+    font-size: 25px;
+    color: green;
+}
+/* Contact Us page text (Member name) */
+.NamesCU {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+ }
+
+/* linked in links formatted*/
+.linkedin {
+  text-indent: 150px;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+/* starter paragraph on contact us page */
+.starter {
+  text-align: center;
+  font-size: 35px;
+  padding: 15px;
+
+}
+/* format for button on the FAQ page, includes the whole question */
+.buttonFAQ {
+  width:100%;
+  border-radius:0px;
+  border:none;
+  background-color:ivory;
+  color:black;
+  text-align: left;
+  font-size: 23px;
+  font-weight: bold;
+}
+.Questions {
+  background-color:ivory;
+  border:black;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+/* makes default display no the answers be none so it will only appear on click */
+.nodisplay {
+  display:none
+}
+/*testimonial page adding boxes*/
+.testimonials {
+  padding: 20px;
+  border-style: solid;
+  border-color: black;
+  background-color: ivory;
+  text-align: center;
+  box-shadow: 5px 6px #888888;
+}
+
+.testtext {
+  color: darkgreen;
+  font-size: 18px;
+}
+
+.personsname {
+  font-style: italic;
+}
+
+
+/* allows media screen usage */
+@media screen and (max-width: 700px) {
+  .column25 {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .column25 {
+    width: 100%;
+  }
+
+}
+
+/* columns for the home page */
+.column25 {
+  padding: 30px;
+  padding-top: 25px;
+ 
+}
+/* columns for contact us page */
+.columnCU {
+  padding: 10px;
+}
+/* column for maps on contact us page */
+.columninfoCU {
+  padding: 150px;
+  text-align: center;
+  margin-left: 200px;
+}
+/* formats map on contact us page */
+.MapandMI{
+  border-style: solid;
+  background-color: ivory;
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 75px;
+
+}
+/* underlines text under map, contact us page */
+.MapandMoreInfo{
+text-decoration: underline;
+}
+/* images on home page */
+.gallery {
+  width: 100%
+}
+
+/* reponsive design for contact us page */
+@media screen and (max-width: 1600px) {
+  .contactinfo {   
+    text-indent: 0px;
+    color: black;
+    font-size: 15px;
+  }
+
+  .email {
+    text-indent: 50px;
+    font-size: 25px;
+    color: green;
+  }
+
+  .linkedin {
+    text-indent: 50px;
+    font-size: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .columnCU {
+    flex: 40%;
+    flex-wrap: wrap;
+    
+  }
+  .columninfoCU {
+    padding: 0px;
+    text-indent: 90px;
+    margin-left: 0px;
+  }
+  .MapandMI{
+    flex: 40%;
+    border-style: solid;
+    background-color: ivory;
+  }
+  .resizeMap{
+    width: 400px;
+    height: 267px;
+  }
+  .MapandMoreInfo{
+    text-decoration: underline;
+    font-size: 20px;
+    }
+}
