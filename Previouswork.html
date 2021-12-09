@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+
+<!-- Metadata for the document -->
+<meta charset="UTF-8">
+<!-- Description of the Website -->
+<meta name="description" content = "This website tells you Information on our GIS website">
+<!-- Title of the Website -->
+ <title> Collective Solution - Previous Work </title>
+<!-- Link to CSS -->
+<link rel="stylesheet" href="css/a3web.css">
+<!-- Displays logo on web tab -->
+<link rel="icon" href="Images/LOGO06.png">
+<!-- Mobile device compatibility -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Link to JavaScript-->
+<script src="JavaScript/a3web.js"></script>
+
+ </head>
+
+
+<body>
+
+<!-- NAV bar for each page. Ideology from https://www.w3schools.com/css/css_navbar.asp -->
+    <ul class="navbar" id="ourNavbar"> 
+        <li><img class= "logo" src="Images/LOGO06.png" alt= "logo" /> </li> 
+        <li><a href="Testimonials.html">Testimonials</a>
+        <li><a href="FAQ.html">FAQ</a>
+        <li><a href="PlansandExpenses.html">Plans and Expenses</a>
+        <li><a href="LearnmoreaboutGIS.html">Learn More</a>
+        <li><a href="Previouswork.html">Previous Work</a>
+        <li><a href="ContactUs.html">Contact Us</a>
+        <li><a href="MeetTheTeam.html">Meet The Team</a>
+        <li><a href="index.html">Home Page</a>
+    </ul>
+
+<!-- Header Page Title -->
+<!--Image acquired on December 3 2021 from https://unsplash.com/ -->
+<!--Ideology for Image with overlaying text from https://pavenum.com/en/blog/images-and-text-overlays-in-html-css/ -->
+<div class ="website_title">
+    <img src="Images/Previous_Work_HeadingImage.jpg" alt="Previous Work" Class="responsive" />
+<div class ="Centered"> Previous Work</div>
+        </div>
+<!--Map created for Geovisualization 102, that has a button design to show/ hide map-->
+<h2> Population Density of Trenton, Ontario </h2>
+<p> This map shows an example of a population density map created for the area of Trenton, Ontario. Trenton is an area located northeast of the City of Toronto. 
+    It is part of the municipality of Quinte West and has a population of approximately 22,000. Within this work, the population density is shown with a purple colour ramp.
+    The more densely populated regions have a darker purple assigned to them. As population decreases, the colour lightens. </p>
+<div class="Button_Text">
+    <button onclick="imageOn('trenton')">View Map</button>
+    <button onclick="imageOff('trenton')">Close Map</button>
+        </div> 
+    <img src="Images/Trent.png" class="Images_Gen" id="trenton" alt= "trenton"/>
+ <!-- Map created for Geovisualization 102-->   
+<h2> Topographic Generalized Map of Okanagan, British Columbia </h2>
+<p> This map is a topographic map of Okanagan, British Columbia. In this work, the built-up areas, contours, forested areas and water systems are shown to depict 
+    a generalized map. This work follows a traditional colour scheme in order to show elements within the map. Green will typically represent the forested areas, brown shows the contours,
+    the lighter pink shows the built-up areas, and blue represents the water bodies. A good generalization of what the area contains can therefore be seen within the map frame. </p>
+   
+<div class="Button_Text">
+    <button onclick="imageOn('generalized')">View Map</button>
+    <button onclick="imageOff('generalized')">Close Map</button>
+        </div> 
+    <img src ="Images/JKTF4.PNG" class="Images_Gen" id="generalized" alt="Okanagan" />
+
+
+<h2> Heat Map of Pedestrian Collision Rates in Toronto, Ontario </h2>
+<p> This map shows a heat map that was created to analyze the number of pedestrians involved in car crashes near school areas in the years 2011-2018 for Toronto, Ontario. The 
+    areas shown in red and yellow signify areas with high collision rates. After further analysis, it was determined that as more speed signs were added near school areas, the number of collisions
+    was reduced significantly. </p>
+
+<div class="Button_Text">
+    <button onclick="imageOn('heatmap')">View Map</button>
+    <button onclick="imageOff('heatmap')">Close Map</button>
+        </div>
+    <img src= "Images/Image_HEATMAP.png" class="Images_Gen" id="heatmap" alt= "heatmap" />
+
+<!-- Map created for Remote Sensing -->
+<h2> False Colour Composite (NDVI) of Lindsay, Ontario</h2>
+<p> This map is a false colour composite that was created to analyze the Normalized Difference Vegetation Index (NDVI) in further depth for an area near Lindsay, Ontario. The areas that have a 
+    darker red colour shown in the map have higher rates of vegetation (higher reflectance) whereas the areas with lighter red colours have more sparse vegetation patterns (less reflectance).  </p>
+
+<div class="Button_Text">
+    <button onclick="imageOn('falseCC')">View Map</button>
+    <button onclick="imageOff('falseCC')">Close Map</button>
+        </div>
+    <img src= 'Images/FalseColourComposite_AbbyLeavens.png' class="Images_Gen" id='falseCC' alt="falsecomposite" />
+
+
+
+<footer>
+
+<!-- Footer design including some contact information -->
+<div class ="Footer_Title_Design">
+    <h3> Contact Us</h3>
+</div>
+
+<p class = "Footer_Text"> The Collective Solution</p>
+<p class = "Footer_Text"> info@TheCollectiveSolution.com</p>
+<p class = "Footer_Text"> 613-961-3517</p>
+</footer>
+</body>
+</html>
