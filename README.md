@@ -1,3 +1,1 @@
-# a3web
-Group Project Assignment 3 for Web Design and Programming
-
+Here we will store the Javascript for our website
